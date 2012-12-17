@@ -11,7 +11,9 @@
 \usepackage{fancyvrb}
 \usepackage{minted}
 \usepackage{listings}
-\usepackage{enumitem} \usepackage{framed} \usepackage{relsize}
+\usepackage{enumitem}
+\usepackage{framed}
+\usepackage{relsize}
 \usepackage{float} 
 \setmainfont[Mapping=TeX-text]{CMU Serif}
 \begin{document}
@@ -20,34 +22,50 @@
 \definecolor{bootgreen}{RGB}{81,163,81}
 \definecolor{bootblue}{RGB}{73, 178, 205}
 
-%\renewcommand{\theenumi}{\roman{enumi}}
 \include{title/title}
 
 \section{Overview}
+    In place of the default Software Engineering Cource project we present this
+    project proposal. The proposed project is a meta-search engine used to monitor
+    sites for required information provide notifications to it's users accordingly. 
 
 \section{High-Level Description}
-\subsection{Components}
+\section{Components}
     The project consists of the following three main components.
     \begin{itemize}
-        \item A web application framework.
+        \item A web application framework providing the interface and the
+            connection?? to the database.
         \item A distributed data collection system (crawler network).
         \item A notification system.
     \end{itemize}
-\subsection{Interactions}
-    
+    \subsection{Framework}
+        The framework allows the developer produce a configuration of the web
+        application in order to provide the interface to the end user and the
+        sites as well as the methods of the searching process.
+    \subsection{Data Collection System}
+        The data collection system is a distributed network of crawlers which poll
+        the server on predefined intervals in order to get a workload. They
+        process the workload searching on the sites they were assigned to and send
+        the results back to the server.
+    \subsection{Notification System}
+        The notification system depends on email services. When a notification is
+        triggered, the notification system is to send an email to the end user
+        with the information he requested.
+\section{Interactions}
+    \subsection{Generic Use Cases}
+        \subsubsection{Developer Case}
+            None yet. Feel free to add some.
+        \subsubsection{End User Case}
+            The End User interacts with the web application and the notification
+            system. He specifies the search terms on the web user interface configured
+            appropriately by the developer. The framework handles the user request and
+            forwards the necessary information to the crawler network.
 
+    \subsection{End User Scenarios}
+        None yet. Feel free to add some.
 
 \section{Specifications}
-\section{Use Cases}
-
-\subsection{Generic Use Cases}
-
-\subsection{End User Scenarios}
-    The End User interacts with the web application and the notification
-    system. He specifies the search terms on the web user interface configured
-    appropriately by the developer. The framework handles the user request and
-    forwards the necessary information to the crawler network.
-
+    None yet. Feel free to add some.
 
 
 \end{document}
