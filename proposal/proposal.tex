@@ -27,9 +27,10 @@
 \section{Overview}
     In place of the default Software Engineering Cource project we present this
     project proposal. The proposed project is a meta-search engine used to monitor
-    sites for required information provide notifications to it's users accordingly. 
+    websites according to its users requests and notify them appropriately. 
 
 \section{High-Level Description}
+    None yet. Feel free to add some.
 \section{Components}
     The project consists of the following three main components.
     \begin{itemize}
@@ -39,27 +40,34 @@
         \item A notification system.
     \end{itemize}
     \subsection{Framework}
-        The framework allows the developer produce a configuration of the web
-        application in order to provide the interface to the end user and the
-        sites as well as the methods of the searching process.
+        The framework allows the developer to produce a configuration of the web
+        application in order to provide an interface to the end user, declare the
+        desired sites to be monitored and define the methods of the searching process.
     \subsection{Data Collection System}
         The data collection system is a distributed network of crawlers which poll
-        the server on predefined intervals in order to get a workload. They
-        process the workload searching on the sites they were assigned to and send
-        the results back to the server.
+        the server on predefined intervals in order to receive a workload. They then
+        proceed to process the workload by searching on the sites for the required data 
+        and send the results back to the server.
     \subsection{Notification System}
-        The notification system depends on email services. When a notification is
+        The notification system provides email services. When a notification is
         triggered, the notification system is to send an email to the end user
         with the information he requested.
 \section{Interactions}
     \subsection{Generic Use Cases}
         \subsubsection{Developer Case}
-            None yet. Feel free to add some.
+            The developer configures the framework to provide a front-end to the end user
+            and a collection of websites which will be crawled for the requested data.
+            For each website, he will need to provide the corresponding instructions
+            so the crawlers will be able to locate the data of interest.
+            Additionally, He has full control over which subsets of the website collection
+            will be available to the end user.
         \subsubsection{End User Case}
-            The End User interacts with the web application and the notification
-            system. He specifies the search terms on the web user interface configured
-            appropriately by the developer. The framework handles the user request and
-            forwards the necessary information to the crawler network.
+            The end user interacts with the web application and the notification
+            system. He specifies the search terms on the web user interface and selects
+            the sites to be monitored, as configured appropriately by the developer. 
+            The framework then handles the user request and forwards the necessary 
+            information to the crawler network. When an appropriate result is found, 
+            the user is notified by the notification system.
 
     \subsection{End User Scenarios}
         None yet. Feel free to add some.
