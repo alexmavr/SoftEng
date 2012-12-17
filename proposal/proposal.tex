@@ -1,0 +1,53 @@
+\documentclass[a4paper,10pt]{article} \usepackage{anysize}
+\marginsize{2cm}{2cm}{1cm}{1cm}
+%\textwidth 6.0in \textheight = 664pt
+\usepackage{xltxtra}
+\usepackage{xunicode}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage[table]{xcolor}
+%\usepackage[usenames,dvipsnames]{xcolor}
+%\usepackage{xgreek}
+\usepackage{fancyvrb}
+\usepackage{minted}
+\usepackage{listings}
+\usepackage{enumitem} \usepackage{framed} \usepackage{relsize}
+\usepackage{float} 
+\setmainfont[Mapping=TeX-text]{CMU Serif}
+\begin{document}
+
+\definecolor{bootred}{RGB}{248,148,6}
+\definecolor{bootgreen}{RGB}{81,163,81}
+\definecolor{bootblue}{RGB}{73, 178, 205}
+
+%\renewcommand{\theenumi}{\roman{enumi}}
+\include{title/title}
+
+\section{Overview}
+
+\section{High-Level Description}
+\subsection{Components}
+    The project consists of the following three main components.
+    \begin{itemize}
+        \item A web application framework.
+        \item A distributed data collection system (crawler network).
+        \item A notification system.
+    \end{itemize}
+\subsection{Interactions}
+    
+
+
+\section{Specifications}
+\section{Use Cases}
+
+\subsection{Generic Use Cases}
+
+\subsection{End User Scenarios}
+    The End User interacts with the web application and the notification
+    system. He specifies the search terms on the web user interface configured
+    appropriately by the developer. The framework handles the user request and
+    forwards the necessary information to the crawler network.
+
+
+
+\end{document}
