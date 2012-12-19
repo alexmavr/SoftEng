@@ -35,7 +35,7 @@
     information is vast. As a result we rely on search engines to provide us
     with a limited number of web pages based on our own search criteria. This
     approach serves us well when one actually wants to find some specific
-    pieces of information. However it is seriously lacking when one simply
+    pieces of information. However, it is seriously lacking when one simply
     wants to get new pieces of information on his subjects of interest as they
     appear. 
 
@@ -93,11 +93,20 @@
         network. When an appropriate result is found, the user is
         contacted by the notification system. 
 
-\section{End User Scenario}
-    None yet. Feel free to add some.
+\section{Typical End User Scenario}
+    In a system configured to track news sites, the end user visits the
+    service's home page which consists mainly of an input form. There, he
+    inserts the keywords he wishes to monitor, and selects the news sites that
+    will be crawler for those keywords from a predefined list. After submitting
+    the form he may choose to create an account by verifying his email address
+    and track the progress of his query, or modify it. When a result is found,
+    he receives an email and his query is removed from the system. Finally, the
+    notification email includes a link to allow him to provide feedback on the
+    quality of the overall service.
 
 \section{High-Level Description}
-    The framework is structured in a Model-View-Controller architecture. 
+    The framework is structured in a Model-View-Controller architecture, while
+    the other components are each structured in one class.
 
     The Model is composed by three classes of objects: Site, Query and Crawler.
     The Site class is populated on system configuration, and defines the total
@@ -110,7 +119,8 @@
     requests, and for the safe interactions of the crawlers with all of above
     classes. 
     
-    The View is a generic web interface, meant to be extended by the developer.
+    The View is a generic web interface, meant to be extended by the developer
+    to provide the final user interface.
 
 \section{Project Specifications}
     The final system to be delivered as part of the course should consist of
