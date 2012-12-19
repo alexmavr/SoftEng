@@ -47,7 +47,7 @@
     monitor sites for required information and provide notifications to its
     users accordingly. 
 
-\section{Components}
+\section{Components and Interactions}
     The project consists of the following three main components.
     \begin{itemize}
         \item A web application framework providing the user interface and the
@@ -56,54 +56,71 @@
         \item A notification system.
     \end{itemize}
     \subsection{Framework}
-        The framework allows the developer to produce a configuration of the
+        The framework allows a developer to produce a configuration of the
         web application in order to provide an interface to the end user,
         declare the desired sites to be monitored and define the methods of
-        the searching process.
+        the searching process. It communicates directly with the user through a
+        developer-created interface in order to receive monitoring requests.
+        It also guides and monitors the data collection system, providing the
+        system administrator with control options over the collection process.
     \subsection{Data Collection System}
         The data collection system is a distributed network of crawlers which
-        poll the server on predefined intervals in order to receive a
+        poll the framework's server on predefined intervals in order to receive a
         workload. They then proceed to process the workload by searching on
         the sites for the required data and send the results back to the
-        server.
+        server. 
     \subsection{Notification System}
         The notification system provides email services. When a notification
-        is triggered, the notification system is to send an email to the end
-        user with the information he requested.
-\section{Interactions}
-    \subsection{Generic Use Cases}
-        \subsubsection{Developer Case}
-            The developer configures the framework to provide a front-end to
-            the end user and a collection of websites which will be crawled
-            for the requested data. For each website, he will need to provide
-            the corresponding instructions so the crawlers will be able to
-            locate the data of interest. Additionally, he has full control
-            over which subsets of the website collection will be available to
-            the end user.
-        \subsubsection{End User Case}
-            The end user interacts with the web application and the
-            notification system. He specifies the search terms on the web user
-            interface and selects the sites to be monitored, as configured
-            appropriately by the developer. The framework then handles the
-            user request and forwards the necessary information to the crawler
-            network. When an appropriate result is found, the user is
-            contacted by the notification system. 
-    \subsection{End User Scenarios}
-        None yet. Feel free to add some.
+        is triggered after a request is fulfilled, the notification system is
+        directed by the framework to send an email to the end user with the
+        information he requested.
+        
+\section{Generic Use Cases}
+    \subsubsection{Developer Case}
+        The developer configures the framework to provide a front-end to
+        the end user and a collection of websites which will be crawled
+        for the requested data. For each website, he will need to provide
+        the corresponding instructions so the crawlers will be able to
+        locate the data of interest. Additionally, he has full control
+        over which subsets of the website collection will be available to
+        the end user.
+    \subsubsection{End User Case}
+        The end user interacts with the web application and the
+        notification system. He specifies the search terms on the web user
+        interface and selects the sites to be monitored, as configured
+        appropriately by the developer. The framework then handles the
+        user request and forwards the necessary information to the crawler
+        network. When an appropriate result is found, the user is
+        contacted by the notification system. 
+
+\section{End User Scenario}
+    None yet. Feel free to add some.
 
 \section{High-Level Description}
-    None yet. Feel free to add some.
+    The framework is structured in a Model-View-Controller architecture. 
 
-\section{Specifications}
-    This is where we should describe deliverables
+    The Model is composed by three classes of objects: Site, Query and Crawler.
+    The Site class is populated on system configuration, and defines the total
+    of sites and data fields that can be monitored. The Query class consists of
+    objects that are created when the user makes a request, and are completed
+    by a crawler when a result is found. The Crawler class holds all
+    crawler-related data for control over the network. 
+    
+    Controllers are responsible for creating Query objects on the end user's
+    requests, and for the safe interactions of the crawlers with all of above
+    classes. 
+    
+    The View is a generic web interface, meant to be extended by the developer.
+
+\section{Project Specifications}
+    The final system to be delivered as part of the course should consist of
+    the following:
     \begin{itemize}
-            \item The generic web framework in the form of a django application
+            \item The generic web framework in the form of a Django application
             \item The crawler implementation.
             \item The notification system.
-            \item The above configured as a usage example along with the user
+            \item All the above configured in a usage example along with a user
                 front end running on a production server.
     \end{itemize}
-    None yet. Feel free to add some.
-
 
 \end{document}
