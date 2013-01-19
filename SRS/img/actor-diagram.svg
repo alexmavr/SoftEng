@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created by diasvg.py -->
+<svg width="29.750cm" height="27.800cm" viewBox="14.100 2.745 43.850 30.545"
+ xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+<ellipse cx="15.400" cy="14.000" rx="0.300" ry="0.300" fill="#FFFFFF" stroke="none"  /><ellipse cx="15.400" cy="14.000" rx="0.300" ry="0.300" fill="none" stroke="#000000"  stroke-width="0.100" /><line x1="14.200" y1="14.600" x2="16.600" y2="14.600" stroke="#000000" stroke-width="0.100" />
+<line x1="15.400" y1="14.300" x2="15.400" y2="15.800" stroke="#000000" stroke-width="0.100" />
+<line x1="15.400" y1="15.800" x2="14.200" y2="17.100" stroke="#000000" stroke-width="0.100" />
+<line x1="15.400" y1="15.800" x2="16.600" y2="17.100" stroke="#000000" stroke-width="0.100" />
+<text x="15.400" y="18.295"  fill="#000000" text-anchor="middle" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
+Crawler</text>
+<ellipse cx="20.200" cy="3.695" rx="0.300" ry="0.300" fill="#FFFFFF" stroke="none"  /><ellipse cx="20.200" cy="3.695" rx="0.300" ry="0.300" fill="none" stroke="#000000"  stroke-width="0.100" /><line x1="19.000" y1="4.295" x2="21.400" y2="4.295" stroke="#000000" stroke-width="0.100" />
+<line x1="20.200" y1="3.995" x2="20.200" y2="5.495" stroke="#000000" stroke-width="0.100" />
+<line x1="20.200" y1="5.495" x2="19.000" y2="6.795" stroke="#000000" stroke-width="0.100" />
+<line x1="20.200" y1="5.495" x2="21.400" y2="6.795" stroke="#000000" stroke-width="0.100" />
+<text x="20.200" y="7.990"  fill="#000000" text-anchor="middle" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
+Database</text>
+<ellipse cx="22.050" cy="25.845" rx="0.300" ry="0.300" fill="#FFFFFF" stroke="none"  /><ellipse cx="22.050" cy="25.845" rx="0.300" ry="0.300" fill="none" stroke="#000000"  stroke-width="0.100" /><line x1="20.850" y1="26.445" x2="23.250" y2="26.445" stroke="#000000" stroke-width="0.100" />
+<line x1="22.050" y1="26.145" x2="22.050" y2="27.645" stroke="#000000" stroke-width="0.100" />
+<line x1="22.050" y1="27.645" x2="20.850" y2="28.945" stroke="#000000" stroke-width="0.100" />
+<line x1="22.050" y1="27.645" x2="23.250" y2="28.945" stroke="#000000" stroke-width="0.100" />
+<text x="22.050" y="30.140"  fill="#000000" text-anchor="middle" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
+End User</text>
+<ellipse cx="31.750" cy="25.990" rx="0.300" ry="0.300" fill="#FFFFFF" stroke="none"  /><ellipse cx="31.750" cy="25.990" rx="0.300" ry="0.300" fill="none" stroke="#000000"  stroke-width="0.100" /><line x1="30.550" y1="26.590" x2="32.950" y2="26.590" stroke="#000000" stroke-width="0.100" />
+<line x1="31.750" y1="26.290" x2="31.750" y2="27.790" stroke="#000000" stroke-width="0.100" />
+<line x1="31.750" y1="27.790" x2="30.550" y2="29.090" stroke="#000000" stroke-width="0.100" />
+<line x1="31.750" y1="27.790" x2="32.950" y2="29.090" stroke="#000000" stroke-width="0.100" />
+<text x="31.750" y="30.285"  fill="#000000" text-anchor="middle" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
+Developer</text>
+<ellipse cx="41.550" cy="25.995" rx="0.300" ry="0.300" fill="#FFFFFF" stroke="none"  /><ellipse cx="41.550" cy="25.995" rx="0.300" ry="0.300" fill="none" stroke="#000000"  stroke-width="0.100" /><line x1="40.350" y1="26.595" x2="42.750" y2="26.595" stroke="#000000" stroke-width="0.100" />
+<line x1="41.550" y1="26.295" x2="41.550" y2="27.795" stroke="#000000" stroke-width="0.100" />
+<line x1="41.550" y1="27.795" x2="40.350" y2="29.095" stroke="#000000" stroke-width="0.100" />
+<line x1="41.550" y1="27.795" x2="42.750" y2="29.095" stroke="#000000" stroke-width="0.100" />
+<text x="41.550" y="30.290"  fill="#000000" text-anchor="middle" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
+Administrator</text>
+<rect x="22.100" y="9.500" width="19.400" height="12.700" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect x="22.100" y="9.500" width="19.400" height="12.700" fill="none" stroke="#000000" stroke-width="0.100" />
+<rect x="22.150" y="9.500" width="7.000" height="0.950" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect x="22.150" y="9.500" width="7.000" height="0.950" fill="none" stroke="#000000" stroke-width="0.100" />
+<text x="22.700" y="10.175"  fill="#000000" text-anchor="start" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
+Web Application</text>
+<rect x="24.050" y="15.500" width="8.150" height="4.950" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect x="24.050" y="15.500" width="8.150" height="4.950" fill="none" stroke="#000000" stroke-width="0.100" />
+<rect x="34.800" y="10.350" width="5.450" height="3.150" fill="#FFFFFF" stroke="none" stroke-width="0"/>
+<rect x="34.800" y="10.350" width="5.450" height="3.150" fill="none" stroke="#000000" stroke-width="0.100" />
+<text x="25.125" y="18.075"  fill="#000000" text-anchor="start" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
+Framework System</text>
+<text x="35.700" y="11.750"  fill="#000000" text-anchor="start" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
+Notification</text>
+<text x="35.700" y="12.550"  fill="#000000" text-anchor="start" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
+   System</text>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="28.125,15.500 28.125,14.500 34.800,14.500 34.800,13.987 "/>
+<polygon fill="#000000" stroke="none" stroke-width="0.100" points="34.800,13.612 35.050,14.112 34.800,13.987 34.550,14.112 "/>
+<polygon fill="none" stroke="#000000" stroke-width="0.100"  points="34.800,13.612 35.050,14.112 34.800,13.987 34.550,14.112 "/>
+<text x="30.100" y="14.250"  fill="#000000" text-anchor="start" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
+triggers</text>
+<line x1="31.775" y1="25.040" x2="31.795" y2="22.750" stroke="#000000" stroke-width="0.100" />
+<polygon fill="#000000" stroke="none" stroke-width="0.100" points="32.045,22.752 31.800,22.250 31.545,22.748 "/>
+<polygon fill="none" stroke="#000000" stroke-width="0.100"  points="32.045,22.752 31.800,22.250 31.545,22.748 "/>
+<line x1="41.550" y1="25.095" x2="41.509" y2="22.750" stroke="#000000" stroke-width="0.100" />
+<polygon fill="#000000" stroke="none" stroke-width="0.100" points="41.759,22.746 41.501,22.250 41.260,22.754 "/>
+<polygon fill="none" stroke="#000000" stroke-width="0.100"  points="41.759,22.746 41.501,22.250 41.260,22.754 "/>
+<text x="31.900" y="24.600"  fill="#000000" text-anchor="start" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
+Configures</text>
+<text x="36.950" y="23.840"  fill="#000000" text-anchor="start" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
+Administrates</text>
+<line x1="22.050" y1="24.945" x2="22.090" y2="22.750" stroke="#000000" stroke-width="0.100" />
+<polygon fill="#000000" stroke="none" stroke-width="0.100" points="22.340,22.754 22.099,22.250 21.840,22.745 "/>
+<polygon fill="none" stroke="#000000" stroke-width="0.100"  points="22.340,22.754 22.099,22.250 21.840,22.745 "/>
+<text x="22.300" y="23.790"  fill="#000000" text-anchor="start" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
+Uses</text>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="31.800,9.500 31.800,5.495 22.000,5.495 "/>
+<polygon fill="#000000" stroke="none" stroke-width="0.100" points="22.000,5.245 21.500,5.495 22.000,5.745 "/>
+<polygon fill="none" stroke="#000000" stroke-width="0.100"  points="22.000,5.245 21.500,5.495 22.000,5.745 "/>
+<polyline fill="none" stroke="#000000" stroke-width="0.100"  points="42.750,29.195 43.800,29.195 43.800,4.195 21.950,4.195 "/>
+<polygon fill="#000000" stroke="none" stroke-width="0.100" points="21.950,3.945 21.450,4.195 21.950,4.445 "/>
+<polygon fill="none" stroke="#000000" stroke-width="0.100"  points="21.950,3.945 21.450,4.195 21.950,4.445 "/>
+<text x="37.150" y="3.950"  fill="#000000" text-anchor="start" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
+manages</text>
+<line x1="16.650" y1="15.800" x2="21.550" y2="15.845" stroke="#000000" stroke-width="0.100" />
+<polygon fill="#000000" stroke="none" stroke-width="0.100" points="21.548,16.095 22.050,15.850 21.552,15.595 "/>
+<polygon fill="none" stroke="#000000" stroke-width="0.100"  points="21.548,16.095 22.050,15.850 21.552,15.595 "/>
+<text x="17.550" y="15.200"  fill="#000000" text-anchor="start" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
+processes</text>
+<text x="17.550" y="16.800"  fill="#000000" text-anchor="start" font-size="0.80" font-family="sans" font-style="normal" font-weight="400">
+    work</text>
+</svg>
