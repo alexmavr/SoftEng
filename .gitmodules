@@ -1,0 +1,6 @@
+[submodule "django-spyglass"]
+	path = django-spyglass
+	url = git://github.com/afein/django-spyglass.git
+[submodule "spyglass-crawlie"]
+	path = spyglass-crawlie
+	url = git://github.com/mastergreg/spyglass-crawlie.git
