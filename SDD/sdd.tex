@@ -12,7 +12,7 @@
 \begin{table}[h]
     \begin{tabular}{| c | c | c | c |}
         \hline
-        Name & AM... & Signature & Date \\
+        Name & R.N. & Signature & Date \\
         \hline
         Alex Maurogiannis & 03109677 & & \today \\
         \hline
@@ -22,7 +22,6 @@
 \end{table}
 
 \chapter{Introduction}
-
     \section{Purpose}
         The purpose of this document is to describe the design specifications
         of the \emph{spyglass} open source project.
@@ -93,9 +92,47 @@
                     the unresolved query in order to update the query's
                     timestamp.
         \end{itemize}
+
 \chapter{System Architecture}
-\inputminted{text}{files/tags}
+    \begin{figure}[h]
+        \includegraphics[width=\textwidth]{files/high_level_diagram.png}
+        \caption{Draft Class Diagram}
+        \label{fig:high_level_diagram}
+    \end{figure}
+
 \chapter{Class Details}
-\chapter{State Diagram}
+    \section{REST APIs}
+    \inputminted[linenos,fontsize=\scriptsize,frame=leftline]{text}{files/api}
+    \section{Crawlie}
+    \inputminted[linenos,fontsize=\scriptsize,frame=leftline]{text}{files/crawlie}
+    \section{Models}
+    \inputminted[linenos,fontsize=\scriptsize,frame=leftline]{text}{files/models}
+    \section{Views}
+    \inputminted[linenos,fontsize=\scriptsize,frame=leftline]{text}{files/views}
+    \section{Unittests}
+    \inputminted[linenos,fontsize=\scriptsize,frame=leftline]{text}{files/unittests}
+    \section{Misc}
+    \inputminted[linenos,fontsize=\scriptsize,frame=leftline]{text}{files/tags}
+
+\chapter{State Diagrams}
+
 \chapter{Open Subjects}
+    \section{Improved Searching}
+        Right now the crawlers target only text and use text similarity
+        routines to determine a ratio. This ratio signifies how relative are
+        the user provided query terms to the content currently found in the
+        webpages. In the future it is possible to unify the searching process
+        and provide smarter matches that focus on conceptual matching instead
+        of text.
+    \section{Network of trust in crawlers}
+        In the current implementation the crawlers are considered trustworthy.
+        This provides the crawlers with infinite power over the unfinished
+        database query entries. The above approach can be extended to provide
+        a point system over each crawlers API key, by verifying the result
+        using multiple crawlers over a single query.
+    \section{Centralised configuration for crawlers}
+        At the moment each crawler has a local configuration for server
+        polling intervals. This can be a security issue for a large number of
+        crawlers. The system should be able to balance the load with the use
+        of a configuration mechanism handled through another API.
 \end{document}
