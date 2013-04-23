@@ -1,13 +1,10 @@
-\documentclass[a4paper,10pt]{article} \usepackage{anysize}
-\marginsize{2cm}{2cm}{1cm}{1cm}
+\documentclass[a4paper,11pt]{report} \usepackage{anysize}
 %\textwidth 6.0in \textheight = 664pt
 \usepackage{xltxtra}
 \usepackage{xunicode}
 \usepackage{graphicx}
 \usepackage{color}
 \usepackage[table]{xcolor}
-%\usepackage[usenames,dvipsnames]{xcolor}
-%\usepackage{xgreek}
 \usepackage{fancyvrb}
 \usepackage{minted}
 \usepackage{listings}
@@ -15,7 +12,9 @@
 \usepackage{framed}
 \usepackage{relsize}
 \usepackage{float} 
-\setmainfont[Mapping=TeX-text]{CMU Serif}
+\usepackage{fancyhdr}                                                          
+\usepackage{lastpage}                                                          
+\setmainfont[Mapping=TeX-text]{CMU Concrete}
 
 \definecolor{bootred}{RGB}{248,148,6}
 \definecolor{bootgreen}{RGB}{81,163,81}
@@ -27,4 +26,20 @@
 \hypersetup{colorlinks,breaklinks,                                                 
     linkcolor=darkblue,urlcolor=darkblue,                                          
     anchorcolor=darkblue,citecolor=darkblue}                                       
+
+    % Layout: Puts the section titles on left side of page                         
+    %\reversemarginpar                                                             
+    %\setlength{\headheight}{15.2pt}                                                
+    \pagestyle{plain}{ %                                                           
+        \fancyhf{} % remove everything                                             
+        \renewcommand{\headrulewidth}{0pt} % remove lines as well                  
+        \renewcommand{\footrulewidth}{0.5pt}                                       
+        \rhead{\leftmark}
+        \rfoot{Page \thepage\ of \pageref{LastPage}}}
+    \pagestyle{fancy}{ %                                                           
+        \fancyhf{} % remove everything                                             
+        \renewcommand{\headrulewidth}{0pt} % remove lines as well                  
+        \renewcommand{\footrulewidth}{0.5pt}                                       
+        \rhead{\leftmark}
+        \rfoot{Page \thepage\ of \pageref{LastPage}}}
 

@@ -1,34 +1,101 @@
 \include{preamble}
 \begin{document}
 
-\definecolor{bootred}{RGB}{248,148,6}
-\definecolor{bootgreen}{RGB}{81,163,81}
-\definecolor{bootblue}{RGB}{73, 178, 205}
-
 \include{title/title}
 
 \tableofcontents
 
+\pagebreak
 
-Document Sign-Off
+\large{Document Sign-Off}
 
 \begin{table}[h]
     \begin{tabular}{| c | c | c | c |}
-        Όνομα & Α.Μ. & Υπογραφή & Ημερομηνία \\
+        \hline
+        Name & AM... & Signature & Date \\
+        \hline
         Alex Maurogiannis & 03109677 & & \today \\
+        \hline
         Gregory Lyras & 03109687 & & \today \\
+        \hline
     \end{tabular}
 \end{table}
 
-\chapter{Εισαγωγή}
+\chapter{Introduction}
 
+    \section{Purpose}
+        The purpose of this document is to describe the design specifications
+        of the \emph{spyglass} open source project.
+    \section{Summary}
+        This project aims to address the issue of dynamic content monitoring
+        in a novel manner. Instead of searching on one site, we can monitor
+        sites of interest and filter their updates based on keywords provided.
+        If the updates match the search criteria then the end user is notified
+        for the latest developments. The proposed project is a meta-search
+        engine used to monitor sites for required information and provide
+        notifications to its users accordingly. 
+    \section{References}
+        \begin{itemize}
+                \item \href{https://www.djangoproject.com/}{django}
+                \item \href{http://tastypieapi.org/}{tastypie}
+                \item
+                    \href{https://en.wikipedia.org/wiki/Representational_state_transfer}{REST framework}
+                \item \href{https://github.com/mastergreg/spyglass-crawlie}{spyglass-crawlie}
+                \item \href{https://github.com/afein/django-spyglass}{django-spyglass}
+        \end{itemize}
 
-\chapter{Αποφάσεις Σχεδίασης}
-    \section{Σκοπός}
-    \section{Περίληψη}
-    \section{Αναφορές}
-\chapter{Αρχιτεκτονική Συστήματος}
-\chapter{Λεπτομέρειες Κλάσεων}
-\chapter{Διάγραμμα Καταστάσεων}
-\chapter{Ανοιχτά Ζητήματα}
+\chapter{Design Choices}
+    \section{Why Python}
+        Python is a modern programming language. It features a dynamic type
+        system and a strong object oriented model. It emphasises on code
+        readability and less lines of code. One of its strongest features is
+        'batteries included' and easy interfacing with C libraries. This
+        provides a large ecosystem of available modules and libraries to
+        choose from. When facing the task of such complexity as a generic web
+        application, a programming language with the above features seems a
+        good choice.
+    \section{Why Django}
+        The \emph{django} framework is a highly extensible modern web
+        framework with a plethora of ready-to-use capabilities such as
+        object-relation modelling, session management, dynamic templating and
+        multiple \emph{DBMS} support that simplify the development of web
+        applications. Instead of developing a web application from scratch we
+        decided to utilise \emph{django's} features to focus on the task at
+        hand.
+    \section{Why REST}
+        Given the recent advances in the standardisation of web Application
+        Programming Interfaces (APIs) the use of RESTful architectural methods
+        is highly preferable in contradiction to deprecated remote procedure
+        call architectures such as SOAP. Additionally, there are several
+        modules that allow django to provide RESTful APIs.
+    \section{Crawler Network}
+        The main design concept behind this project is to provide realtime
+        monitoring of multiple resources. In order to provide this feature we
+        designed a distributed method of crawling that provides the network
+        with resilience against blocking. Thus we distribute the set of
+        crawlers on several machines that operate independently and
+        concurrently.
+    \section{Crawler Protocol}
+        The protocol used by the crawlers when they interact with the server
+        provides the following operations. 
+        \begin{itemize}
+                \item \emph{Get Sites}: The crawler requests through HTTP a
+                    list of websites supported by the server.
+                \item \emph{Get XPaths}: The crawler requests through HTTP the
+                    XPaths for every field of interest for each crawlable
+                    website.
+                \item \emph{Get Workload}: The crawler requests through HTTP a
+                    list of queries to be resolved.
+                \item \emph{Send Result}: If a query is resolved the crawler
+                    sends through HTTP the data back to the server.
+                \item \emph{Update Timestamps}: When the query is not resolved
+                    the crawler sends a PATCH request to the server regarding
+                    the unresolved query in order to update the query's
+                    timestamp.
+        \end{itemize}
+\chapter{System Architecture}
+\inputminted{text}{files/tags}
+\chapter{Class Details}
+\chapter{State Diagram}
+\chapter{Open Subjects}
 \end{document}
