@@ -1,0 +1,29 @@
+▼ UnitTests : Component
+    +create_site_factory : function
+    +create_user_factory : function
+
+    ▼ AdminPanelTestcase : class
+        +setUp : function
+        +test_normal_function : function
+        +test_setting_flag : function
+        +test_staff_access : function
+
+    ▼ ChangeAccessTestcase : class
+        +setUp : function
+        +test_create_and_delete : function
+        +test_invalid_action : function
+        +test_staff_access : function
+
+    ▼ QueryModelTestCase : class
+        +test_save : function
+
+    ▼ ReceiveQueryViewTestCase : class
+        +setUp : function
+        +test_GET_index : function
+        +test_accept_old_user : function
+        +test_accept_own_query : function
+        +test_decline_nonexistant : function
+        +test_decline_unauthorized : function
+        +test_decline_unauthorized_nocreate : function
+        +test_user_creation_as_anonymous : function
+        +test_user_creation_as_existing : function

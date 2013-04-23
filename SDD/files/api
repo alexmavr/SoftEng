@@ -1,0 +1,51 @@
+▼ ApiResources : Component 
+    ▼ CrawlerResource : class
+        ▼ Meta : class
+            allowed_methods
+            authentication
+            authorization
+            queryset
+            resource_name
+            validation
+
+    ▼ MetaResource : class
+        ▼ Meta : class
+            allowed_methods
+            authentication
+            authorization
+            meta
+            queryset
+            resource_name
+            validation
+
+    ▼ PathsResource : class
+        site
+        ▼ Meta : class
+            allowed_methods
+            authentication
+            authorization
+            fields
+            queryset
+            resource_name
+            validation
+
+    ▼ QueryResource : class
+        result
+        site
+        ▼ Meta : class
+            allowed_methods
+            validation
+            authentication
+            authorization
+            queryset
+            resource_name
+        +obj_get_list : function
+         
+    ▼ SiteResource : class
+        ▼ Meta : class
+            allowed_methods
+            authentication
+            authorization
+            queryset
+            resource_name
+            validation

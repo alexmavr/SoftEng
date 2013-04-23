@@ -6,8 +6,9 @@ VERSION = 0.2
 
 all: $(TARGET).pdf
 
-%.pdf:	%.tex title/* files/*
-	$(CC) $(CCFLAGS) $<
+%.pdf:	%.tex preamble.tex title/* files/*
+	$(CC) $(CCFLAGS) $(TARGET)
+	$(CC) $(CCFLAGS) $(TARGET)
 
 
 .PHONY:	clean all spell dist

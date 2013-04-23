@@ -1,0 +1,4 @@
+▼ Views : Component
+    +admin_panel : function
+    +change_crawlie_access : function
+    +receive_query : function
